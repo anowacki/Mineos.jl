@@ -18,6 +18,7 @@ export
 using DataStructures: OrderedDict
 
 using SeisModels: LinearLayeredModel, write_mineos
+using Mineos_jll: minos_bran
 
 
 """
@@ -81,7 +82,9 @@ function eigenfrequencies(m::LinearLayeredModel, freq=1.0;
                         """)
                 end
                 write_mineos(m, model_in, freq)
-                output = String(read(pipeline(control, `minos_bran`)))
+                output = minos_bran() do minos_bran_path
+                    String(read(pipeline(control, `$minos_bran_path`)))
+                end
                 _check_minos_bran_stdout(output)
                 freqs = read_eigenfrequencies(model_out)
                 _check_minos_bran_rayleigh_quotient(freqs, eps, mode_type, scale=10)
