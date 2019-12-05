@@ -81,7 +81,7 @@ function eigenfrequencies(m::LinearLayeredModel, freq=1.0;
                         $lmin $lmax $wmin $wmax $nmin $nmax
                         """)
                 end
-                write_mineos(m, model_in, freq)
+                write_mineos(model_in, m, freq)
                 output = minos_bran() do minos_bran_path
                     String(read(pipeline(control, `$minos_bran_path`)))
                 end
