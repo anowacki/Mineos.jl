@@ -1,7 +1,7 @@
 name = "Mineos"
 uuid = "daba6828-70d2-4229-869c-b11708ab6c61"
 authors = ["Andy Nowacki <a.nowacki@leeds.ac.uk>"]
-version = "0.1.4"
+version = "0.1.5"
 
 [deps]
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"

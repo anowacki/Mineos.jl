@@ -47,7 +47,7 @@ For example, to retrieve ₀S₂, do `freqs[(0,:S,2)]`, and for ₃T₈ write
   100 to 200 mHz (periods 5 to 10 s), `eps` should be between `1e-12` and
   `1e-10`.
 - `wgrav=10`: Frequency in mHz above which gravitational terms are neglected.
-- `lmin=1`, `lmax=256`: Minimum and maximum angular order of modes.
+- `lmin=1`, `lmax=20`: Minimum and maximum angular order of modes.
 - `wmin=0.0`, `wmax=166.0`: Minimum and maximum mode eigenfrequencies
   to consider.
 - `nmin=0`, `nmax=10`: Minimum and maximum dispersion branch numbers to
@@ -57,7 +57,7 @@ function eigenfrequencies(m::LinearLayeredModel, freq=1.0;
         # Which modes to calculate
         radial=true, toroidal=true, spheroidal=true, ic_toroidal=true,
         # Mineos calculation parameters
-        eps=1e-10, wgrav=10, lmin=1, lmax=6000, wmin=0.0, wmax=166.0,
+        eps=1e-10, wgrav=10, lmin=1, lmax=20, wmin=0.0, wmax=166.0,
         nmin=0, nmax=10)
     out = OrderedDict{Tuple{Int,Symbol,Int}, Float64}()
     for (jcom, mode_type) in enumerate((:radial, :toroidal, :spheroidal, :ic_toroidal))
