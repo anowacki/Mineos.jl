@@ -1,5 +1,5 @@
 using Test, Mineos
 
-@testset "ALl tests" begin
+@testset "All tests" begin
     include("eigenfrequencies.jl")
 end
