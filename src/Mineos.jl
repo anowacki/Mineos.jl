@@ -25,6 +25,7 @@ using Mineos_jll: minos_bran
     eigenfrequencies(m::LinearLayeredModel, freq=1.0; kwargs...) -> freqs
 
 Compute the eigenfrequencies of normal modes for the model `m`.
+`m` must be a `LinearLayeredModel` from `SeisModels`.
 
 Eigenfrequencies are returned as an `OrderedDict` where the keys are
 a tuple of the radial order ``n``, mode type (`:S` for spheroidal, `:T`
