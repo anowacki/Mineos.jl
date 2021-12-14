@@ -1,14 +1,12 @@
 """
 # Mineos
 
-The Julia Mineos module provides an interface to computing normal
+The Julia `Mineos` module provides an interface to computing normal
 mode eigenfrequencies using the Mineos software.
 
-## Installation
-
-The package requires that the following Mineos programs are in your
-system's executable search path (e.g., \$PATH on Linux/Unix):
-- `minos_bran`
+# List of functions
+- `eigengfrequencies`: Compute the normal mode eigenfrequencies for
+  a range of radial and angular orders for a 1D model of the Earth.
 """
 module Mineos
 
