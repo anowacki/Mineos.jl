@@ -1,8 +1,7 @@
 # Mineos.jl
 
-[![Build Status](https://travis-ci.org/anowacki/Mineos.jl.svg?branch=master)](https://travis-ci.org/anowacki/Mineos.jl)
-[![Build status](https://ci.appveyor.com/api/projects/status/8mhk01fra1qi7d5c?svg=true)](https://ci.appveyor.com/project/AndyNowacki/mineos-jl)
-[![Coverage Status](https://coveralls.io/repos/github/anowacki/Mineos.jl/badge.svg?branch=master)](https://coveralls.io/github/anowacki/Mineos.jl?branch=master)
+[![Build Status](https://github.com/anowacki/Mineos.jl/workflows/CI/badge.svg)](https://github.com/anowacki/Mineos.jl/actions)
+[![Coverage status](https://codecov.io/gh/anowacki/Mineos.jl/branch/master/graph/badge.svg?token=knbujQ671A)](https://codecov.io/gh/anowacki/Mineos.jl)
 
 Mineos.jl is a [Julia](https://julialang.org) wrapper around
 the [Mineos](https://geodynamics.org/cig/software/mineos)
