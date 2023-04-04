@@ -1,0 +1,8 @@
+[deps]
+Mineos = "daba6828-70d2-4229-869c-b11708ab6c61"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+SeisModels = "47bbc3d6-959e-5592-a00a-d17660d07a0f"
+
+[compat]
+Plots = "1"
+SeisModels = "0.3.7, 1"
