@@ -1,6 +1,6 @@
 The Mineos.jl package is licensed under the MIT "Expat" License:
 
-> Copyright (c) 2019: Andy Nowacki.
+> Copyright (c) 2019-2023: Andy Nowacki.
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
