@@ -11,7 +11,7 @@ planets.
 ## Installation
 In Julia, simply do
 ```julia
-julia> import Pkg; Pkg.pkg"add https://github.com/anowacki/Mineos.jl"
+julia> import Pkg; Pkg.add("Mineos")
 ```
 
 ## Usage
