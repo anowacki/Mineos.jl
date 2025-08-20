@@ -168,8 +168,12 @@ function eigenmodes(m::LinearLayeredModel, freq=1.0;
                         """)
                 end
                 write_mineos(model_in, m, freq)
-                output = minos_bran() do minos_bran_path
-                    String(read(pipeline(control, `$minos_bran_path`)))
+                output = @static if VERSION < v"1.6"
+                    minos_bran() do minos_bran_path
+                        String(read(pipeline(control, `$minos_bran_path`)))
+                    end
+                else
+                    String(read(pipeline(control, `$(minos_bran())`)))
                 end
                 _check_minos_bran_stdout(output)
                 modes = read_eigenmodes(model_out)
